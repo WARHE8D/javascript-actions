@@ -1,0 +1,18 @@
+name: jsAction
+description: javascript action to add 2 numbers
+
+inputs:
+  num1:
+    required: true
+    default: 0
+  num2:
+    required: true
+    default: 0
+
+outputs:
+  result:
+    description: 'Sum of 2 numbers: '
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js' #vercel compiles all the js files into 1 file in dist
